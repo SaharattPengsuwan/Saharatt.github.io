@@ -1,0 +1,821 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kanit|Chakra+Petch|Prompt">
+		<style>
+		body{
+			font-family: kanit;
+		}
+		h2{
+			font-family: 'Chakra Petch';
+			font-size: 35px;
+		}
+		h3{
+			font-family: 'Chakra Petch';
+			font-size: 27px;
+			
+		}
+		h4{
+			font-family: Prompt;
+			font-size: 18px;
+		}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				
+
+				<!-- Section -->
+					<section id="third">
+						<header>
+							<h2 >DATA TYPES, VARIABLES <br>AND <br>EXPRESSION</h2>
+						</header>
+						<div class="content">
+							
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'><strong><br><br><br><br><br><br>INTRODUCTION<br>Computer <br>and<br> Programming</strong></h3>
+										<p align = 'center'>ก่อนที่เราจะเริ่มเขียนโปรแกรมเรามาทำความรู้จักกับองค์ประกอบพื้นฐานและวิธีการทำงานของคอมพิวเตอร์
+                                            ประกอบด้วยอุปกรณ์ที่ต่อภายนอกเรียกว่าฮาร์ดแวร์(Hardware) และโปรแกรมที่ทำงานบนคอมพิวเตอร์เรียกว่าซอฟต์แวร์(Software)
+                                        </p>
+                                        <p align = 'left'><strong>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;SOFTWARE</strong>
+                                        <br>• System software
+                                        <br>&emsp;- Operating Systems<br>&emsp;(ระบบปฏิบัติการ) <br>เช่น Linux, Windows, Mac OS 
+                                        <br>&emsp;- Utility Programs<br>&emsp;(ความสามารถของวอฟต์แวร์) <br>เช่น Back up, Virus scanners, Compression 
+                                        <br>&emsp;- Software Development <br>&emsp;(ตัวแปลภาษาคอมพิวเตอร์) <br>เช่น Assemblers, Compilers, Interpreter
+                                        <br>• Application software
+                                        <br>&emsp;- Microsoft word, PowerPoint<br>, Pages, Editor, Photoshop      
+                                        </P>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<br><br><br><br><br><br><br><br><a href="images/gallery/thumbs/guido.G_.jpg" class="landscape"><img src="images/gallery/thumbs/guido.G_.jpg" alt="" /></a>
+											
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+                                <section>
+									<header>
+										<h4 align = 'center'>HOW COMPUTER <br>STORE DATA</h4>
+                                        <p align = 'left'>&emsp;คอมพิวเตอร์จะเก็บข้อมูลในรูปแบบ<br>ของเลขฐานสอง(ฺBinary Numeral System)</p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h4 align = 'center'>COMPILER</h4>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h4 align = 'center'>INTERPRETER</h4>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            
+
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'> LEVEL LANGUAGE</h3>
+										<p align = 'left'>&emsp;ภาษาใดๆที่ผู้ใช้งานใช้สื่อสารกับคอมพิวเตอร์ หรือคอมพิวเตอร์ด้วยกัน แล้วคอมพิวเตอร์สามารถ
+                                            ทำงานตามคำสั่งนั้นได้ คำนี้มักใช้เรียกแทนภาษาโปรแกรม แต่ความเป็นจริงภาษาโปรแกรมคือส่วนหนึ่งของภาษาคอมพิวเตอร์เท่านั้น
+                                            และมีภาษาอื่นๆที่เป็นภาษาคอมพิวเตอร์เช่นกัน</p>
+										<p align = 'left'><strong>&emsp;&emsp;LOW LEVEL LANGUAGE</strong>
+                                            <br>&emsp;&emsp;&emsp;&emsp;(ภาษาระดับต่ำ)
+										    <br>- ภาษาเครื่อง (Machine Language) ที่ประกอบด้วยตัวเลขเฉพาะ
+                                                0 และ 1 เท่านั้น
+                                            <br>- เครื่องคอมพิวเตอร์สามารถท าความเข้าใจได้ทันที
+                                            <br>- การเขียนโปรแกรมค่อนข้างยุ่งยากและไม่สะดวก</p>
+										<p align = 'left'><strong>&emsp;&emsp;HIGH LEVEL LANGUAGE</strong>
+                                            <br>&emsp;&emsp;&emsp;&emsp;(ภาษาระดับสูง)
+                                            <br>- พัฒนาให้มีรูปแบบใกล้เคียงกับภาษาของมนุษย์เรียกว่า
+                                            ภาษาระดับสูง (High-Level Language)
+                                            <br>- มีกลุ่มคำภาษาอังกฤษที่เข้าใจง่ายขึ้น
+                                            <br>- เป็นภาษาเชิงกระบวนการหรือ Procedural Language ทำงานเป็นขั้นตอน
+                                            เรียงตามลำดับคำสั่งที่เขียน
+                                            <br>- เขียนโปรแกรมที่ซับซ้อนได้มากขึ้น แต่ก็ยังยุ่งยากอยู่บ้าง
+                                            <br>- หากเป็นโปรแกรมขนาดใหญ่ต้องอาศัยประสบการณ์และความชำนาญ
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/thumbs/hello-world-l.jpg" class="landscape"><img src="images/gallery/thumbs/hello-world-l.jpg" alt="" /></a>
+											<a href="images/gallery/thumbs/hello-world-l.jpg" class="landscape"><img src="images/gallery/thumbs/" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+							<!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'>PROGRAM DESIGN</h3>
+									</header>
+									
+								</section>
+
+								<section>
+									<header>
+										<h4 align = 'center'>PROGRAM DEVELOPMENT CYCLE</h4>
+                                        <p align = 'left'>
+                                            &emsp;ก่อนที่จะเริ่มทำงาน ควรมีการวางแผนก่อนการเขียนโปรแกรม มีวิธีที่ใช้ในการวางแผนก่อนการเขียนโปรแกรมอยู่หลายวิธี
+                                            เช่น pseudocode และผังงานเพื่อสร้างรูปแบบของโปรแกรม
+                                        </p>
+                                        <p align = 'left'><strong>&emsp;&emsp;DESIGNING A PROGRAM</strong>
+                                            <br>&emsp;นักเขียนโปรแกรมควรที่จะออกแบบรากฐานของโปรแกรมให้ดีตั้งแต่ตอนแรกๆ เพื่อลดปัญหาที่จะตามมาในอนาคต
+                                            <br>&emsp;กระบวนการออกแบบโปรแกรมสามารถสรุปได้ 2 ประการดังนี้
+                                            <br>1. เข้าใจงานที่โปรแกรมจะทำ
+                                            <br>2. กำหนดขั้นตอนที่ต้องดำเนินการเพื่อดำเนินงาน
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<header>
+										<h4 align = 'center'>FLOWCHART</h4>
+                                        <p align = 'left'>
+                                            เป็นอีกเครื่องหนึ่งของโปรแกรมเมอร์ที่ใช่ในการออกแบบโปรมแกรม โดยจะเป็นแผนภาพที่แสดงขั้นตอนการทำงานของโปรแกรมนั้นๆ
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+                                            &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<a href="images/gallery/fulls/06.jpg"><img src="images/gallery/thumbs/06.jpg" alt="" /></a>
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'>INPUT PROCESS OUTPUT</h3>
+                                        <p align = 'left'>
+                                            &emsp;โปรแกรมคอมพิวเตอร์จะดำเนินการตามขั้นตอน 3 ขั้นตอนนี้
+                                            <br>1. Input
+                                            <br>2. Process
+                                            <br>3. Output
+                                            <br>&emsp;โดยการที่จะรับข้อมูลเข้ามา และนำไปดำเนินการด้วยวิธีการต่างๆ เช่น วิธีการทางคณิตศาสตร์ และจะนำผลลัพธ์ออกมาแสดงเป็นเอาต์พุต
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'>VARIABLES</h3>
+                                        <p align = 'left'>
+                                            &emsp;<strong>ตัวแปร (Variable)</strong> คือชื่อหรือเครื่องหมายที่กำหนดขึ้นสำหรับใช้อ้างถึงค่าที่เก็บในหน่วยความจำ ตัวแปรจะมีชื่อ (Identifier) 
+                                            สำหรับใช้ในการอ้างถึงข้อมูลของมัน ในการเขียนโปรแกรม ค่าของตัวแปรสามารถที่จะกำหนดได้ใน run-time 
+                                            หรือเปลี่ยนแปลงอยู่ตลอดเวลาในขณะที่โปรแกรมทำงาน (Executing)
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>Reserved Word</h4>
+                                        <p align = 'left'>
+                                            &emsp;คำที่โปรแกรมสงวนไว้ ไม่สามารถนำมาตั้งเป็นตัวแปรได้
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'><strong>DATA TYPE</strong></h3>
+									</header>
+									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'><strong>NUMERIC INTEGER</strong></h4>
+										
+                                        <p align = 'left'><strong>&emsp;&emsp;&emsp;&emsp;Basic Data Types</strong>
+                                            <br>• Numeric
+                                            <br>&emsp;- Integer
+                                            <br>&emsp;- Floating point
+                                        
+                                            <br>• Boolean
+                                            <br>• String   
+                                        </P>
+                                        <p align = 'left'><strong>&emsp;&emsp;&emsp;Composite Data Types</strong>
+                                            <br>• List
+                                            <br>• Tuple
+                                            <br>• Dictionary
+                                            <br>• Set
+                                              
+                                            </P>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/thumbs/guido.G_.jpg" class="landscape"><img src="images/gallery/thumbs/guido.G_.jpg" alt="" /></a>
+											
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>NUMBERS</h4>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+								<section>
+									<header>
+										<h4 align = 'center'>BOOLEAN</h4>
+                                        <p align = 'left'>&emsp;ข้อมูลที่เป็นค่าความจริงคือ จริง(True) และ เท็จ(False)</p>
+
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>STRING</h4>
+                                        <p align = 'left'>&emsp;ข้อมูลที่เป็นข้อความ</p>
+
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'>PYTHON OPERATORS</h3>
+                                        <p align = 'left'>
+                                            &emsp;<strong>ตัวแปร (Variable)</strong> คือชื่อหรือเครื่องหมายที่กำหนดขึ้นสำหรับใช้อ้างถึงค่าที่เก็บในหน่วยความจำ ตัวแปรจะมีชื่อ (Identifier) 
+                                            สำหรับใช้ในการอ้างถึงข้อมูลของมัน ในการเขียนโปรแกรม ค่าของตัวแปรสามารถที่จะกำหนดได้ใน run-time 
+                                            หรือเปลี่ยนแปลงอยู่ตลอดเวลาในขณะที่โปรแกรมทำงาน (Executing)
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>ARITHMETIC OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>OPERATOR PRECEDENCE</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>COMPARISON OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>LOGICAL OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>BITWISE OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+
+                                <section>
+									<header>
+										<h4 align = 'center'>ASSIGNMENT OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>IDENTITY OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>MEMBERSHIP OPERATORS</h4>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                            <!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'>INPUT</h3>
+                                        <p align = 'left'>
+                                            &emsp;โปรแกรมมักต้องการรับข้อมูลจากผู้ใช้ผ่านแป้นพิมพ์ใน Python จึงมีฟังชันก์ที่ใช้รับข้อมูลจากผู้ใช้ผ่านแป้นพิมพ์ 
+                                        </p>
+                                    
+                                    </header>   
+                                    <div class="content">
+                                        <div class="gallery">
+                                            
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                        </div>
+                                    </div>
+																		
+								</section>
+
+                                <section>
+									<header>
+										<p align = 'center'>variable = input(prompt)</p>                        
+									</header>
+									<div class="content">
+										<div class="gallery">
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>INPUT NUMBERS</h4>  
+                                        <p align = 'left'>&emsp;การรับค่าที่เป็นตัลเลขนั้นแบ่งเป็น 2 ประเภท
+                                            <br>1. จำนวนเต็ม()
+                                            <br>2. ทศนิยม()
+                                        </p>                   
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+										</div>
+									</div>
+								</section>
+
+                                <!-- Section -->
+								<section>
+									<header>
+										<h3 align = 'center'>COMMENTS</h3>
+                                        <p align = 'left'>
+                                            &emsp;เป็นข้อความที่อาจจะมีไว้เพื่ออธิบายการทำงานข้อโปรแกรมในแต่ละบรรทัด โดยที่จะไม่มีผลต่อการทำงานของโปรแกรม
+                                        </p>                                   
+                                    </header>   
+                                    <div class="content">
+                                        <div class="gallery">                                            
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>
+                                        </div>
+                                    </div>																		
+								</section>
+
+
+                                
+
+						</div>
+					</section>
+					<!-- Section -->
+					<section id="second">
+						<header>
+							<h2>Next LECTURE    </h2>
+							
+						</header>
+						<div class="content">
+							<p><strong><font size = "5"></font></strong></p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-star"><a href="LECTURE - 00.html">LECTURE - 00</a></li>
+								<li class="icon solid fa-bars"><a href="LECTURE - 01.html">LECTURE - 01</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 02.html">LECTURE - 02</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 03.html">LECTURE - 03</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 04.html">LECTURE - 04</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 05.html">LECTURE - 05</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 06.html">LECTURE - 06</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 07.html">LECTURE - 07</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 08.html">LECTURE - 08</a></li>
+							</ul>
+							
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Duis sed adpiscing veroeros amet</h2>
+						</header>
+						<div class="content">
+							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+							<ul class="actions">
+								<li><a href="index_0.html" class="button primary large">Get Started</a></li>
+								
+							</ul>
+						</div>
+					</section>
+
+					
+
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					
+				<!-- Copyright -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
