@@ -1,0 +1,672 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kanit|Chakra+Petch|Prompt">
+		<style>
+		body{
+			font-family: kanit;
+		}
+		h2{
+			font-family: 'Chakra Petch';
+			font-size: 35px;
+		}
+		h3{
+			font-family: 'Chakra Petch';
+			font-size: 27px;
+			
+		}
+		h4{
+			font-family: Prompt;
+			font-size: 18px;
+		}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				
+
+				<!-- Section -->
+					<section id="third">
+						<header>
+							<h2 align = 'center'>FILES <br>AND <br>EXCEPTIONS</h2>
+						</header>
+						<div class="content">
+							
+
+							<!-- Introduction -->
+								<section>
+									<header>
+										<h3 align = 'center'><strong><br><br><br><br>Introduction</strong></h3>
+                                        <p align = 'center'>ฟังก์ชันคือกลุ่มของคำสั่งที่มีอยู่ภายในโปรแกรมสำหรับปฏิบัติงานใดงานหนึ่งโดยเฉพาะ</p>
+                                        <p align = 'left'>&emsp;<strong>Functions</strong>
+                                            <br>• ฟังก์ชันคือส่วนของโค้ดที่ใช้ซ้ำได้                                           
+                                            <br>• ฟังก์ชันมีชื่อและต้องประกาศ<br>ชื่อฟังก์ชันนั้นดำเนินการฟังก์ชั่นนั้นๆ                                          
+                                            <br>• ฟังก์ชันสามารถรับและส่งคืนข้อมูลได้
+                                        </p>
+										
+									</header>
+                                    <div class="content">
+										<div class="gallery">
+											<br><br><br><br><span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>FILE INPUT/OUTPUT</h4>
+                                        <p align = 'left'>&emsp;<strong>Function naming rules</strong>
+                                            <br>• เพื่อให้โปรแกรมเก็บข้อมูลระหว่างที่ดำเนินการ ต้องบันทึกข้อมูล
+                                            <br>&emsp;- ข้อมูลจะถูกบันทึกลงในไฟล์โดย<br>&emsp;ทั่วไปแล้วจะอยู่บนดิสก์คอมพิวเตอร์
+                                            <br>&emsp;- ข้อมูลที่บันทึกไว้สามารถเรียก<br>&emsp;และใช้งานได้ในภายหลัง
+                                            <br>• <strong>"Writing data to"</strong> : บันทึกข้อมูลลงในไฟล์
+                                            <br>• <strong>"Output file"</strong> : เขียนข้อมูลลงในไฟล์ที่กำหนดไว้
+                                            <br>• <strong>"Reading data from"</strong> : กระบวนการดึงข้อมูลจากไฟล์
+                                            <br>• <strong>"Input file"</strong> : ไฟล์ที่ใช้อ่านข้อมูล
+                                        </p>
+									</header>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>WRITE DATA TO FILE</h4>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>READ DATA FROM FILE</h4>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>TYPE OF FILES</h4>
+                                        <p align = 'left'>
+                                            &emsp;<strong>โดยทั่วไปไฟล์จะแบ่งเป็น 2 ประเภท</strong>
+                                            <br>•<strong>Text file</strong> : มีข้อมูลที่เข้ารหัสเป็นข้อความ
+                                            <br>• <strong>Binary file</strong> : ข้อมูลที่ยังไม่ได้แปลงเป็นข้อความ
+                                        <br>&emsp;<strong>มี 2 วิธีที่จะดึงไฟล์ที่เก็บไว้ออกมา</strong>
+                                            <br>• <strong>Sequential access</strong> : อ่านไฟล์ตามลำดับตั้งแต่ต้นจนจบ
+                                            <br>• <strong>Direct access</strong> : สามารถข้ามไปยังข้อมูลนั้นๆ ในไฟล์ได้โดยตรง
+                                        </p>
+									</header>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>FILE</h4>
+                                        <p align = 'left'>
+                                            &emsp;<strong>มี 3 ขั้นตอนเสมอที่ต้องทำเมื่อไฟล์ถูกใช้โดยโปรแกรม</strong>
+                                            <br>• <strong>Open the file</strong> : การเปิดไฟล์จะสร้างการเชื่อมต่อระหว่างไฟล์กับโปรแกรม 
+                                            การเปิดไฟล์เอาต์พุตมักจะสร้างไฟล์บนดิสก์และอนุญาตให้โปรแกรมเขียนข้อมูลลงไป 
+                                            การเปิดไฟล์อินพุตทำให้โปรแกรมสามารถอ่านข้อมูลจากไฟล์ได้
+                                            <br>• <strong>Process the file</strong> : ในขั้นตอนนี้ ข้อมูลจะถูกเขียนไปยังไฟล์ 
+                                            (หากเป็นไฟล์เอาต์พุต) หรืออ่านจากไฟล์ (หากเป็นไฟล์อินพุต)
+                                            <br>• <strong>Close the file</strong> : เมื่อโปรแกรมใช้งานไฟล์เสร็จแล้ว 
+                                            ไฟล์จะต้องปิด การปิดไฟล์จะยกเลิกการเชื่อมต่อไฟล์จากโปรแกรม
+                                        </p>
+									</header>
+								</section>
+
+                            <!-- Input / Output -->
+                                <section>
+									<header>
+										<h3 align = 'center'>Input / Output</h3>                 
+									</header>
+                                    <div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>								
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>OPEN FILE</h4>
+                                        <p align = 'center'>file_variable <br>=<br> open(filename , mode)
+                                        </p>   
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>FILE MODE</h4>
+                                        </p>   
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>  
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                        
+										</div>
+									</div>
+								</section>
+
+                            <!-- Using Loop to Process File -->
+								<section>
+									<header>
+										<h3 align = 'center'>Using Loop to Process File</h3>	                                       												
+									</header>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>DETECTING END OF FILE</h4>
+                                        <p align = 'left'>
+                                                • <strong>Record</strong> : ชุดข้อมูลที่ใช้อธิบายถึงข้อมูล 1 รายการ
+                                            <br>• <strong>Field</strong> : ข้อมูลเพียงชิ้นเดียวภายในรายการ
+                                            <br>• <strong>Write record</strong> : เข้าถึงไฟล์ตามลำดับโดยการเขียนฟิลด์ทีละรายการ
+                                            <br>• <strong>Read record</strong> : เข้าไฟล์ถึงตามลำดับโดยการอ่านแต่ละฟิลด์จนบันทึกเสร็จสมบูรณ์
+                                        </p>  
+                                        <p align = 'left'>
+                                        &emsp;<strong>สิ่งสำคัญเมื่อต้องทำงานกับไฟล์ คือ ต้องสามารถทำสิ่งต่อไปนี้ได้</strong>
+                                        <br>• <strong>Add records</strong> : เพิ่มข้อมูล
+                                        <br>• <strong>Display records</strong> : แสดงผลข้อมูล
+                                        <br>• <strong>Search for a specific record</strong> : ค้นหาเฉพาะข้อมูลที่บันทึก
+                                        <br>• <strong>Modify records</strong> : ค้นหาและบันทึกข้อมูล
+                                        <br>• <strong>Delete records</strong> : ลบข้อมูลที่บันทึก
+                                    </p>    
+
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                            <!-- Exceptions -->
+								<section>
+									<header>
+										<h3 align = 'center'>Exceptions</h3>	                                       												
+									</header>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>EXCEPTION</h4>
+                                        <p align = 'left'>
+                                                • <strong>Exception</strong> : ข้อผิดพลาดที่เกิดขึ้นขณะโปรแกรมกำลังทำงาน
+                                                <br>&emsp;- มักจะทำให้โปรแกรมหยุดกะทันหัน
+                                            <br>• <strong>Traceback</strong> : ข้อความที่แสดงเกี่ยวกับข้อผิดพลาด โดยจะให้ข้อมูลเป็นหมายเลขบรรทัดทัดที่เกิดการผิดพลาด
+                                                <br>&emsp;- ระบุประเภทของข้อผิดพลาดและอธิบายถึงข้อผิดพลาดสั้นๆ
+                                            <br>• ใน Python จะเป็นคำสั่ง <strong>try/except</strong> 
+                                            <br>&emsp;&emsp;<strong>General format:</strong>
+                                            <br>&emsp;&emsp;&emsp;<strong>try:</strong>                                  
+                                            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<strong>statements</strong>                                           
+                                            <br>&emsp;&emsp;&emsp;<strong>except exceptionName:</strong>                                            
+                                            <br>&emsp;&emsp;&emsp;&emsp;&emsp;<strong>statements</strong>
+                                            <br><br>• <strong>Try suite</strong> : คำสั่งที่อาจก่อให้เกิดข้อยกเว้น
+                                            <br>• <strong>Handler</strong> : 
+                                            <br>• ข้อผิดพลาดสามารถป้องกันได้ด้วยการเขียน Code อย่างระมัดระวัง
+                                            <br>• ข้อผิดพลาดบางอย่างก็ไม่สามารถหลีกเลี่ยงด้วยการเขียน Code อย่างระมัดระวังได้
+                                            <br>• หากเกิดข้อผิดพลาดในคำสั่ง <strong>Try</strong>
+                                                <br>&emsp;- ข้อผิดพลาดที่ระบุไว้ใน <strong>Except</strong>
+                                                <br>&emsp;&emsp;- คำสั่งที่ระบุไว้ใน <strong>Except</strong> จะเริ่ม<br>&emsp;&emsp;ทำงาน
+                                                <br>&emsp;&emsp;- ทำงานต่อจาก <strong>Try/Except</strong> 
+                                            <br>• หากไม่มีข้อยกเว้น ตัวจัดการจะถูกข้าม
+                                                
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>HANDLING MULTIPLE EXCEPTIONS</h4>
+                                        <p align = 'left'>
+                                                • บ่อยครั้งที่ <strong>Try</strong> สามารถเจอข้อผิดพลาดได้มากกว่า 1 
+                                                <br>&emsp;- ต้องใช้ <strong>Except</strong> ของข้อผิดพลาด<br>&emsp;แต่ละประเภท
+                                            <br>• บางข้อพลาดที่มีโอกาสเกิดขึ้นได้น้อยที่สุดใน <strong>Try</strong> 
+                                                <br>&emsp;- ข้อพลาดที่มีโอกาสเกิดขึ้นได้น้อย<br>&emsp;ที่สุดควรอยู่หลังสุดของ <strong>Except</strong>      
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>DISPLAYING AN EXCEPTION'S DEFAULT ERROR MESSAGE</h4>
+                                        <p align = 'left'>
+                                            • <strong>Exception object</strong> : สิ่งที่สร้างขึ้นในหน่วยความจำเมื่อมีการส่งข้อผิดพลาด
+                                            <br>&emsp;- มักจะมีข้อความแสดงข้อผิดพลาดเริ่มต้นที่เกี่ยวข้องกับข้อยกเว้น
+                                            <br>&emsp;&emsp;- สามารถกำหนดสิ่งที่ข้อยกเว้นให้กับตัวแปรในข้อยกเว้น
+                                            <br>&emsp;- สามารถส่งผ่านตัวแปรที่กำหนดข้อยกเว้นไปยังฟังก์ชันการพิมพ์เพื่อแสดงข้อความแสดงข้อผิดพลาดได้  
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>THE ELSE CLAUSE</h4>
+                                        <p align = 'left'>
+                                            • <strong>Try/Except</strong> : อาจรวมถึงประโยคทางเลือกอื่นซึ่งปรากฏต่อท้ายประโยคยกเว้นทั้งหมด
+                                            <br>&emsp;- สอดคล้องกับ <strong>Try/Except</strong>
+                                            <br>&emsp;- ไวยากรณ์คล้ายกับประโยคอื่นในโครงสร้างการตัดสินใจ
+                                            <br>&emsp;- <strong>Else suite</strong> : บล็อกของคำสั่งที่ดำเนินการหลังจากคำสั่งใน<strong>Try</strong> เฉพาะในกรณีที่ไม่มีการยกข้อยกเว้น 
+                                            <br>&emsp;&emsp;- หากยกข้อยกเว้นชุดอื่นจะถูกข้าม  
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>THE FINALLY CLAUSE</h4>
+                                        <p align = 'left'>
+                                            • <strong>Try/Except</strong> : คำสั่งอาจรวมถึงประโยคตัวเลือกสุดท้ายซึ่งปรากฏขึ้นหลังจากทั้งหมดยกเว้นอนุประโยค
+                                            <br>&emsp;- สอดคล้องกับ <strong>Try/Except</strong>
+                                            <br>&emsp;- <strong>General format:</strong>
+                                            <br>&emsp;&emsp;&emsp;<strong>finally:</strong>                                  
+                                            <br>&emsp;&emsp;&emsp;&emsp;<strong>statements</strong>                                           
+                                        <br><br>&emsp;- <strong>Finally suite</strong> : บล็อกของคำสั่ง<br>&emsp;หลังประโยคสุดท้าย
+                                            <br>&emsp;- ดำเนินการไม่ว่าจะมีข้อยกเว้นเกิดขึ้น<br>&emsp;หรือไม่  
+                                            <br>&emsp;- จุดประสงค์คือทำการล้างข้อมูลก่อน<br>&emsp;ออก 
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>WHAT IF AN EXCEPTION IS NOT HANDLED?</h4>
+                                        <p align = 'left'>
+                                            • 2 วิธีสำหรับข้อยกเว้นที่จะไม่จัดการ
+                                            <br>&emsp;- ไม่ระบุข้อยกของข้อผิดพลาด<br>&emsp;ประเภทนั้น
+                                            <br>&emsp;- ข้อยกเว้นเกิดขึ้นนอก<strong>Try</strong>
+                                        <br>• ในทั้ง 2 กรณี ข้อยกเว้นจะทำให้โปรแกรมหยุด                                 
+                                            <br>&emsp;- Python ให้ข้อมูลเกี่ยวกับข้อยกเว้น<br>&emsp;ที่สามารถยกขึ้นโดยฟังก์ชันต่างๆ                                          
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+                            
+						</div>
+					</section>
+				<!-- Section -->
+					<section id="second">
+						<header>
+							<h2>Next LECTURE    </h2>
+							
+						</header>
+						<div class="content">
+							<p><strong><font size = "5"></font></strong></p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-star"><a href="LECTURE - 00.html">LECTURE - 00</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 01.html">LECTURE - 01</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 02.html">LECTURE - 02</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 03.html">LECTURE - 03</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 04.html">LECTURE - 04</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 05.html">LECTURE - 05</a></li>
+								<li class="icon solid fa-bars"><a href="LECTURE - 06.html">LECTURE - 06</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 07.html">LECTURE - 07</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 08.html">LECTURE - 08</a></li>
+							</ul>
+							
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Duis sed adpiscing veroeros amet</h2>
+						</header>
+						<div class="content">
+							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+							<ul class="actions">
+								<li><a href="index_0.html" class="button primary large">Get Started</a></li>
+								
+							</ul>
+						</div>
+					</section>
+
+					
+
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					
+				<!-- Copyright -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
