@@ -1,0 +1,573 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kanit|Chakra+Petch|Prompt">
+		<style>
+		body{
+			font-family: kanit;
+		}
+		h2{
+			font-family: 'Chakra Petch';
+			font-size: 35px;
+		}
+		h3{
+			font-family: 'Chakra Petch';
+			font-size: 27px;
+			
+		}
+		h4{
+			font-family: Prompt;
+			font-size: 18px;
+		}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				
+
+				<!-- Section -->
+					<section id="third">
+						<header>
+							<h2 align = 'center'>FILES <br>AND <br>EXCEPTIONS</h2>
+						</header>
+						<div class="content">
+							
+
+							<!-- Introduction -->
+								<section>
+									<header>
+										<h3 align = 'center'><strong><br><br><br><br><br><br><br><br>Introduction</strong></h3>	
+									</header>
+                                    <div class="content">
+										<div class="gallery">
+											<br><br><br><br><br><br><br><br><span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>SEQUENCE TYPES</h4>
+                                        <p align = 'left'>
+											<strong>The fundamental sequence types</strong> : list และ tuples 
+											ทั้ง list และ tuples เป็นลำดับที่สามารถเก็บข้อมูลประเภทต่างๆ ได้ 
+											ความแตกต่างระหว่าง list และ tuples นั้นง่ายมาก
+                                            <br>• <strong>List</strong> เปลี่ยนแปลงได้ ซึ่งหมายความว่าโปรแกรมสามารถเปลี่ยนเนื้อหาได้
+                                            <br>• <strong>Tuple</strong> นั้นไม่สามารถเปลี่ยนแปลงได้ ซึ่งหมายความว่าเมื่อสร้างแล้ว เนื้อหาจะไม่สามารถเปลี่ยนแปลงได้                                           
+                                        </p>
+									</header>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>LISTS</h4>
+										<p align = 'left'>
+											<strong>List</strong> เป็นสิ่งที่สามารถเปลี่ยนแปลงข้อมูลด้านใน list ในระหว่างการดำเนินการของโปรแกรมได้
+											list เป็นโครงสร้างข้อมูลแบบไดนามิก นั้นคือข้อมูลใน list สามารถถูกเพิ่มและลบได้ ด้วยการทำดัชนี
+											การแบ่งส่วน และวิธีต่างๆ เพื่อทำงานกับ list ในโปรแกรม  
+											<br>• <strong>List</strong> : คือประเภทของข้อมูลที่มีข้อมูลหลายรายการในตัว List 
+											<br>&emsp;- Format : <br>&emsp;<strong>list = [item1, item2, etc.]</strong>  
+											<br>&emsp;- List สามารถใส่ข้อมูลได้หลาย<br>&emsp;ประเภท
+											<br>• ฟังก์ชัน <strong>print</strong> สามารถใช้แสดงรายการทั้งหมดได้  
+											<br>• ฟังก์ชั่น <strong>list()</strong> สามารถแปลงข้อมูลบางประเภทเป็น list                                    
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+
+                            <!-- List Methods and Useful Built-in Functions -->
+                                <section>
+									<header>
+										<h3 align = 'center'>List Methods and Useful Built-in Functions</h3>                 
+									</header>
+                                    <div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>								
+								</section>
+
+								<section>
+										<header>
+											<h4 align = 'center'>LISTS OPERATOR</h4>
+											<p align = 'left'>  
+													• <strong>Repetition operator</strong> : ทำข้อมูลหลายชุดของ List และรวมเข้าด้วยกัน 
+												<br>&emsp;- สัญลักษณ์ * เป็นการทำซ้ำเมื่อใช้กับ <br>&emsp;list และจำนวนเต็ม  
+												<br>&emsp;&emsp;- ลำดับคือตัวถูกดำเนินการทางซ้าย <br>&emsp;&emsp;ตัวเลขอยู่ทางขวา
+												<br>&emsp;- General format : <strong>list * n</strong>  
+												<br>• สามารถวนซ้ำรายการโดยใช้ for loop  
+												<br>&emsp;- format : <strong>for x in list:</strong>                                  
+											</p>  
+										</header>
+										<div class="content">
+											<div class="gallery">
+												<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+											</div>
+										</div>
+								</section>
+
+								<section>
+									<header>
+										<h4 align = 'center'>LIST METHODS AND USEFUL BUILT-IN FUNCTIONS</h4>
+										<p align = 'left'>											
+												
+											<p align = 'left'>																						
+												• ข้อผิดพลาด <strong>IndexError</strong> จะเพิ่มขึ้นหากใช้ดัชนีที่ไม่ถูกต้อง 
+											<br>• ฟังก์ชัน len ส่งกลับความยาวของลำดับ เช่น list
+											<br>&emsp;- Example : <br>&emsp;<strong>size = len(my_list)</strong>  
+											<br>&emsp;- ส่งกลับจำนวนองค์ประกอบใน<br>&emsp;รายการ ดังนั้นดัชนีขององค์ประกอบ<br>&emsp;สุดท้ายคือ <strong>len(list)-1</strong>
+											<br>&emsp;- สามารถใช้เพื่อป้องกันข้อผิดพลาด <br>&emsp;IndexError เมื่อวนซ้ำรายการด้วยลูป  
+											<br>• สามารถใช้ตัวดำเนินการ <strong>in</strong> เพื่อกำหนดว่ารายการนั้นมีอยู่ในรายการหรือไม่ 
+											<br>&emsp;- General format : <br>&emsp;&emsp;<strong>item in list</strong>  
+											<br>&emsp;- หากเจอข้อมูลจะคืนค่าเป็น <strong>Ture</strong> และ<br>&emsp;หากหาไม่เจอจะคืนค่าเป็น <strong>False</strong>
+											<br>• สามารถใช้ตัวดำเนินการ not in เพื่อกำหนดว่ารายการนั้นไม่อยู่ในรายการหรือไม่
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>LIST METHODS</h4>
+										<p align = 'left'>
+											• <strong>append(item)</strong> : เพิ่มออบเจ็ค x เข้ามายัง List 
+										<br>• <strong>index(item)</strong> : ค้นหาตำแหน่งของออบเจ็ค x
+										<br>• <strong>insert(index,item)</strong> : ใส่ออบเจ็ค x เข้ามายัง List ที่ตำแหน่ง i
+										<br>• <strong>sort():</strong> : เรียงข้อมูลภายใน List จากน้อยไปมาก
+										<br>• <strong>remove(item):</strong> : นำออบเจ็ค x อันแรกที่พบใน List ออก
+										<br>• <strong>reverse():</strong> : ย้อนกลับลำดับของ List
+										<br>• <strong>del :</strong> : ลบข้อมูลออกจาก list
+										<br>• <strong>min and max</strong> : ส่งค่าคืนข้อมูลที่มีค่าต่ำสุดและสูงสุดใน list
+                                        </p>   
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>  
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                        
+										</div>
+									</div>
+								</section>
+
+								
+
+                            <!-- Two-Dimensional Lists -->
+								<section>
+									<header>
+										<h3 align = 'center'>Two-Dimensional Lists</h3>	                                       												
+									</header>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>TWO-DIMENSIONAL LISTS</h4>
+                                        <p align = 'left'>
+                                                • <strong> Two-dimensional list</strong> : list ที่มี list อื่นเป็นองค์ประกอบ
+											<br>&emsp;- เป็นที่รู้จักกันในนาม nested list
+											<br>&emsp;- เป็น list ที่มีแถวแนวตั้งและแถวแนวนอน
+											<br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                            <br>• ในการประมวลผลข้อมูลใน list two-dimensional จำเป็นต้องใช้สองดัชนี
+                                            <br>• โดยทั่วไปแล้วจะใช้การวนซ้ำซ้อนเพื่อประมวลผล
+                                        </p>  
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+
+                            <!-- Introduction TUPLES-->
+								<section>
+									<header>
+										<h3 align = 'center'>Introduction TUPLES</h3>	                                       												
+									</header>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>TUPLES</h4>
+                                        <p align = 'left'>
+                                                • <strong>Tuple</strong> : ลำดับที่ไม่เปลี่ยนรูป
+                                            <br>&emsp;- คล้ายกับ list มาก
+											<br>&emsp;- เมื่อสร้างขึ้นแล้วจะไม่สามารถเปลี่ยนแปลงได้
+											<br>&emsp;- format : <br>&emsp;&emsp;<strong>tuple_name = (item1, item2)</strong>
+											<br>&emsp;- Tuples รองรับการดำเนินการตาม list
+											<br>&emsp;&emsp;- การทำดัชนีตัวห้อยสำหรับการดึงองค์ประกอบ
+											<br>&emsp;&emsp;- วิธีการต่างๆ เช่น index
+											<br>&emsp;&emsp;- ฟังก์ชันในตัว เช่น len, min, max
+											<br>&emsp;&emsp;- Slicing expressions
+											<br>&emsp;&emsp;- The in, +, and * operators
+                                            <br>• สิ่งที่ Tuple ไม่สามารถทำได้
+                                            <br>&emsp;- เพิ่มข้อมูล
+                                            <br>&emsp;- ลบข้อมูล                               
+											<br>&emsp;- ค้นหาข้อมูล                                          
+											<br>&emsp;- ย้อยกลับลำดับของข้อมูล                                           
+											<br>&emsp;- เรียงลำดับของข้อมูล
+                                            <br>• ข้อดีของ Tuple มีดีกว่า List
+                                            <br>&emsp;- การประมวลผล Tuple นั้นเร็วกว่าการประมวลผล list
+                                            <br>&emsp;- Tuple ปลอยภัยกว่า
+                                            <br>&emsp;- การดำเนินการบางอย่างใน Python ต้องใช้ tuples
+                                            <br>• Tuple สามารถแปลงเป็น List ได้
+                                            <br>• List สามารถแปลงเป็น Tuple ได้        
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a> 
+                                            <a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+                            
+						</div>
+					</section>
+				<!-- Section -->
+					<section id="second">
+						<header>
+							<h2>Next LECTURE    </h2>
+							
+						</header>
+						<div class="content">
+							<p><strong><font size = "5"></font></strong></p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-star"><a href="LECTURE - 00.html">LECTURE - 00</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 01.html">LECTURE - 01</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 02.html">LECTURE - 02</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 03.html">LECTURE - 03</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 04.html">LECTURE - 04</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 05.html">LECTURE - 05</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 06.html">LECTURE - 06</a></li>
+								<li class="icon solid fa-bars"><a href="LECTURE - 07.html">LECTURE - 07</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 08.html">LECTURE - 08</a></li>
+							</ul>
+							
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Duis sed adpiscing veroeros amet</h2>
+						</header>
+						<div class="content">
+							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+							<ul class="actions">
+								<li><a href="index_0.html" class="button primary large">Get Started</a></li>
+								
+							</ul>
+						</div>
+					</section>
+
+					
+
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					
+				<!-- Copyright -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
