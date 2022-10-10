@@ -1,0 +1,596 @@
+<!DOCTYPE HTML>
+<!--
+	Paradigm Shift by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Python</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Kanit|Chakra+Petch|Prompt">
+		<style>
+		body{
+			font-family: kanit;
+		}
+		h2{
+			font-family: 'Chakra Petch';
+			font-size: 35px;
+		}
+		h3{
+			font-family: 'Chakra Petch';
+			font-size: 27px;
+			
+		}
+		h4{
+			font-family: Prompt;
+			font-size: 18px;
+		}
+		</style>
+
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				
+
+				<!-- Section -->
+					<section id="third">
+						<header>
+							<h2 align = 'center'>DICTIONARY <br>AND<br> SET</h2>
+						</header>
+						<div class="content">
+							
+
+							<!-- Introduction -->
+								<section>
+									<header>
+										<h3 align = 'center'><br><br><br><br><br><br><br><br>Introduction<br>DICTIONARIES</h3>	
+									</header>
+                                    <div class="content">
+										<div class="gallery">
+											<br><br><br><br><br><br><br><br><span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>DICTIONARIES</h4>
+                                        <p align = 'left'>
+											    • <strong>Dictionary</strong> : สิ่งที่ใช้ในการเก็บชุด<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;ข้อมูล
+                                            <br>&emsp;- ชุดข้อมูลจะประกอบด้วย key and <br>&emsp;value
+                                            <br>&emsp;&emsp;- เรียกว่าการจับคู่ key and value
+                                            <br>&emsp;&emsp;- key จะไม่เปลี่ยนแปลง   
+                                            <br>&emsp;- การจะดึงค่าออกมาต้องใช้ key ที่<br>&emsp;สัมพันธ์กับค่านั้นๆ    
+                                            <br>&emsp;- รูปแบบการสร้าง Dictionary  
+                                            <br>&emsp;<strong>dictionary = {key1:val1, key2:val2}</strong>                              
+                                        </p>
+									</header>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>ADD AND DELETE DICTIONARY</h4>
+										<p align = 'left'>
+                                            • <strong>Dictionary</strong> : เป็นสิ่งที่สามารถเปลี่ยนแปลงได้
+                                            <br>• การเพิ่มค่าใหม่ใน <br><strong>Dictionary : dictionary[key] = value</strong>
+                                            <br>&emsp;- ถ้า key มีอยู่แล้วใน Dictionary การ<br>&emsp;เพิ่มค่าจะเป็นการเปลี่ยนค่า value <br>&emsp;แทน
+                                            <br>• การลบค่าใหม่ใน <br><strong>Dictionary : del dictionary[key] </strong> 
+                                            <br>&emsp;- ถ้า key ไม่อยู่ใน Dictionary จะเกิด<br>&emsp;การ Error                             
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>DICTIONARY NUMBER OF ELEMENTS AND MIXING DATA TYPES</h4>
+										<p align = 'left'>
+                                                • function <strong>len</strong> : ใช้เพื่อนับจำนวนองค์ประกอบที่อยู่ใน dictionary
+                                            <br>• <strong>key</strong> เป็นค่าที่ไม่สามารถเปลี่ยนแปลงได้แต่<strong>value</strong>สามารเปลี่ยนแปลงเป็นข้อมูลประเภทใดก็ได้
+                                            <br>&emsp;- ถ้า key มีอยู่แล้วใน Dictionary การ<br>&emsp;เพิ่มค่าจะเป็นการเปลี่ยนค่า value <br>&emsp;แทน
+                                            <br>• ค่าที่เก็บไว้ใน Dictionary เดียวกันสามารถเป็นข้อมูลที่มีประเภทต่างกันได้                             
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>CREATING AN EMPTY DICTIONARY AND USING FOR LOOP</h4>
+										<p align = 'left'>
+                                                • การสร้าง dictionary เปล่านั่น สามารถสร้างได้หลายวิธี
+                                                <br>&emsp;- ใช้ <strong>{}</strong> 
+                                                <br>&emsp;- ใช้ function <strong>dict()</strong>
+                                                <br>&emsp;- สามารถเพิ่มข้อมูลใน dictionary ขณะที่โปรแกรมทำงานอยู่ได้
+                                                <br>• ใช้ for วนซ้ำใน dictionary  
+                                                <br>&emsp;- <strong>General format <br>&emsp;for key in dictionary: </strong>                    
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>SOME DICTIONARY METHODS</h4>
+										<p align = 'left'>
+                                                • <strong>clear</strong> : ลบข้อมูลทั้งออกจาก Dictionary
+                                            <br>• <strong>get</strong> : อ่านค่าของสมาชิกที่มีคีย์ตามที่ระบุ
+                                            <br>• <strong>items</strong> : อ่านรายการทั้งหมด โดยคืนค่ากลับมาเป็นทูเพิล
+                                            <br>• <strong>keys</strong> : อ่านคีย์ทั้งหมด โดยคืนค่ากลับมาเป็นทูเพิล
+                                            <br>• <strong>pop</strong> : อ่านค่าของสมาชิกที่มีคีย์ตามที่ระบุ จากนั้นลบสมาชิกตัวนั้น
+                                            <br>• <strong>popitem</strong> : เป็นการ remove จาก item ล่าสุดเลย 
+                                            <br>• <strong>values</strong> : อ่านค่าทั้งหมด โดยคืนค่ากลับมาเป็นทูเพิล             
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>
+
+
+                            <!-- SET -->
+                                <section>
+									<header>
+										<h3 align = 'center'>SET</h3>                 
+									</header>							
+								</section>
+
+								<section>
+										<header>
+											<h4 align = 'center'>Set Methods and Useful Built-in Functions</h4>
+											<p align = 'left'>  
+													• <strong>Set</strong> : เป็นสิ่งที่ใช้สำหรับเก็บข้อมูลที่ไม่ซ้ำกันและดำเนินการทางคณิตศาสตร์เกี่ยวกับ Set ได้
+												<br>&emsp;- ข้อมูลทั้งหมดต้องไม่ซ้ำกัน  
+												<br>&emsp;- ข้อมูลใน Set จะไม่เรียงลำดับ
+												<br>&emsp;- ข้อมูลภายในสามารถเป็นข้อมูลที่ประเภทต่างกันได้ 
+												<br>• function <strong>len</strong> : ใช้เพื่อนับจำนวนองค์ประกอบที่อยู่ใน Set  
+												<br>• method <strong>add</strong> : เพื่อเพิ่มข้อมูลใน Set 
+                                                <br>• method <strong>update</strong> : เป็นการนำข้อมูลของ set อื่นๆไปใส่ในอีก set หนึ่ง
+                                                <br>• method <strong>remove</strong> : ลบข้อมูลออกจาก Set 
+                                                <br>• method <strong>discard</strong> : สำหรับลบข้อมูลออกจาก Set ถ้าหากค่าดังกล่าวมีอยู่
+                                                <br>• method <strong>clear</strong> : ลบข้อมูลทั้งหมดออกจาก Set นั่นจะทำให้เซ็ตว่างหลังจากเรียกเมธอดนี้   
+                                                <br>• method <strong>pop</strong> : นำข้อมูลออกจาก Set และส่งค่ากลับมา 
+                                                                                    ค่าที่ส่งกลับจากเมธอดนี้ไม่สามารถคาดเดาได้ 
+                                                                                    และถ้าเซ็ตเป็นเซ็ตว่าง เมธอดทำให้เกิดข้อผิดพลาด 
+                                                                                    KeyError ขึ้น                              
+											</p>  
+										</header>
+										<div class="content">
+											<div class="gallery">
+												<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+											</div>
+										</div>
+								</section>
+
+								<section>
+									<header>
+										<h4 align = 'center'>FINDING THE UNION OF SETS</h4>
+										<p align = 'left'>											
+												
+											<p align = 'left'>																						
+											• <strong>UNION</strong>  
+                                            <br>&emsp;- รวม set ตั้งแต่สอง set ขึ้นไปเข้า<br>&emsp;ด้วยกันเป็น set ใหม่
+											<br>&emsp;- ใช้ method <strong>union()</strong>  
+											<br>&emsp;- Format : <strong>set1.union(set2)</strong>
+											<br>&emsp;- ใช้ operator <strong>|</strong> 
+                                            <br>&emsp;- Format : <strong>set1 | set2</strong>
+										<br>• <strong>Intersection</strong>
+											<br>&emsp;- ได้ set ใหม่ที่มีข้อมูลที่เหมือนกับ set <br>&emsp;อื่นๆเท่านั้น 
+											<br>&emsp;- ใช้ method <strong>intersection()</strong>
+                                            <br>&emsp;- Format : <strong>set1.intersection(set2)</strong>
+                                            <br>&emsp;- ใช้ operator <strong>&</strong>
+                                            <br>&emsp;- Format : <strong>set1 & set2</strong>
+										<br>• <strong>Symmetric difference</strong>
+                                            <br>&emsp;- ได้ set ใหม่ที่รวมกันของข้อมูลที่ต่าง<br>&emsp;กันเท่านั้นระหว่างสอง set
+											<br>&emsp;- ใช้ method <br>&emsp;<strong>symmetric_difference()</strong>
+                                            <br>&emsp;- Format : <br>&emsp;<strong>set1.symmetric_difference(set2)</strong>
+                                            <br>&emsp;- ใช้ operator <strong>^</strong>
+                                            <br>&emsp;- Format : <strong>set1 ^ set2</strong>
+                                        <br>• <strong>Subset</strong>
+                                            <br>&emsp;- เพื่อเช็คว่าข้อมูลทุกตัวใน set หนึ่ง<br>&emsp;ปรากฏอยู่ในอีก set หนึ่งจริงหรือไม่
+											<br>&emsp;- ใช้ method <strong>issubset()</strong>
+                                            <br>&emsp;- Format : <strong>setA.issubset(setB)</strong>
+                                            <br>&emsp;- ใช้ operator <strong><=</strong>
+                                            <br>&emsp;- Format : <strong>set1 <= set2</strong>
+                                        <br>• <strong>Superset</strong>
+                                            <br>&emsp;- เพื่อเช็คว่ามีข้อมูลทุกตัวของ set อื่น<br>&emsp;ปรากฏอยู่ใน set นี้หรือไม่
+											<br>&emsp;- ใช้ method <strong>issuperset()</strong>
+                                            <br>&emsp;- Format : <strong>setA.issuperset(setB)</strong>
+                                            <br>&emsp;- ใช้ operator <strong><=</strong>
+                                            <br>&emsp;- Format : <strong>set1 <= set2</strong>
+                                        </p>
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<span class="landscape"><img src="images/gallery/lecture-1/lec1-17.jpg" width='600' alt="" /></span>                                  
+										</div>
+									</div>
+								</section>			
+
+                            <!-- SERIALIZING OBJECTS -->
+								<section>
+									<header>
+										<h3 align = 'center'>SERIALIZING OBJECTS</h3>	                                       												
+									</header>									
+								</section>
+
+                                <section>
+									<header>
+										<h4 align = 'center'>Serializing Objects</h4>
+                                        <p align = 'left'>
+                                            • <strong>Serialize an object:</strong> : list ที่มี list อื่นเป็นองค์ประกอบ
+                                        <br>• ในการประมวลผลข้อมูลใน list two-dimensional จำเป็นต้องใช้สองดัชนี
+                                        <br>• ในการประมวลผลข้อมูลใน list two-dimensional จำเป็นต้องใช้สองดัชนี
+											<br>&emsp;- เป็นที่รู้จักกันในนาม nested list
+											<br>&emsp;- เป็น list ที่มีแถวแนวตั้งและแถวแนวนอน
+											<br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                            <br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                            <br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                        <br>• ในการประมวลผลข้อมูลใน list two-dimensional จำเป็นต้องใช้สองดัชนี
+                                        <br>• โดยทั่วไปแล้วจะใช้การวนซ้ำซ้อนเพื่อประมวลผล
+                                        <br>• โดยทั่วไปแล้วจะใช้การวนซ้ำซ้อนเพื่อประมวลผล
+                                            <br>&emsp;- เป็นที่รู้จักกันในนาม nested list
+                                            <br>&emsp;- เป็น list ที่มีแถวแนวตั้งและแถวแนวนอน
+                                            <br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                            <br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                            <br>&emsp;- มีประโยชน์สำหรับการทำงานกับข้อมูลหลายชุด
+                                        <br>• โดยทั่วไปแล้วจะใช้การวนซ้ำซ้อนเพื่อประมวลผล
+                                        </p>  
+									</header>
+									<div class="content">
+										<div class="gallery">
+											<a href="images/gallery/fulls/10.jpg" class="landscape"><img src="images/gallery/thumbs/10.jpg" alt="" /></a>                                          
+										</div>
+									</div>
+								</section>
+                            
+						</div>
+					</section>
+				<!-- Section -->
+					<section id="second">
+						<header>
+							<h2>Next LECTURE    </h2>
+							
+						</header>
+						<div class="content">
+							<p><strong><font size = "5"></font></strong></p>
+							<ul class="feature-icons">
+								<li class="icon solid fa-star"><a href="LECTURE - 00.html">LECTURE - 00</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 01.html">LECTURE - 01</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 02.html">LECTURE - 02</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 03.html">LECTURE - 03</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 04.html">LECTURE - 04</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 05.html">LECTURE - 05</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 06.html">LECTURE - 06</a></li>
+								<li class="icon solid fa-bars"><a href="LECTURE - 07.html">LECTURE - 07</a></li>
+								<li class="icon solid fa-star"><a href="LECTURE - 08.html">LECTURE - 08</a></li>
+							</ul>
+							
+						</div>
+					</section>
+
+				<!-- Section -->
+					<section>
+						<header>
+							<h2>Duis sed adpiscing veroeros amet</h2>
+						</header>
+						<div class="content">
+							<p><strong>Proin tempus feugiat</strong> sed varius enim lorem ullamcorper dolore aliquam aenean ornare velit lacus, ac varius enim lorem ullamcorper dolore.</p>
+							<ul class="actions">
+								<li><a href="index_0.html" class="button primary large">Get Started</a></li>
+								
+							</ul>
+						</div>
+					</section>
+
+					
+
+				<!-- Elements -->
+				<!--
+					<section>
+						<header>
+							<h2>Elements</h2>
+						</header>
+						<div class="content">
+
+							<section>
+								<header>
+									<h3>Text</h3>
+								</header>
+								<div class="content">
+									<p>This is <b>bold</b> and this is <strong>strong</strong>. This is <i>italic</i> and this is <em>emphasized</em>.
+									This is <sup>superscript</sup> text and this is <sub>subscript</sub> text.
+									This is <u>underlined</u> and this is code: <code>for (;;) { ... }</code>. Finally, <a href="#">this is a link</a>.</p>
+									<hr />
+									<h2>Heading Level 2</h2>
+									<h3>Heading Level 3</h3>
+									<h4>Heading Level 4</h4>
+									<h5>Heading Level 5</h5>
+									<hr />
+									<h5>Blockquote</h5>
+									<blockquote>Fringilla nisl. Donec accumsan interdum nisi, quis tincidunt felis sagittis eget tempus euismod. Vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing accumsan faucibus. Vestibulum ante ipsum primis in faucibus lorem ipsum dolor sit amet nullam adipiscing eu felis.</blockquote>
+									<h5>Preformatted</h5>
+									<pre><code>i = 0;
+
+while (!deck.isInOrder()) {
+  print 'Iteration ' + i;
+  deck.shuffle();
+  i++;
+}
+
+print 'Sorted in ' + i + ' iterations.';</code></pre>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Lists</h3>
+								</header>
+								<div class="content">
+
+									<h4>Unordered</h4>
+									<ul>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Alternate</h4>
+									<ul class="alt">
+										<li>Dolor pulvinar etiam.</li>
+										<li>Sagittis adipiscing.</li>
+										<li>Felis enim feugiat.</li>
+									</ul>
+
+									<h4>Ordered</h4>
+									<ol>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis viverra.</li>
+										<li>Felis enim feugiat.</li>
+										<li>Dolor pulvinar etiam.</li>
+										<li>Etiam vel felis lorem.</li>
+										<li>Felis enim et feugiat.</li>
+									</ol>
+									<h4>Icons</h4>
+									<ul class="icons">
+										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+										<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
+									</ul>
+
+									<h4>Actions</h4>
+									<ul class="actions">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions stacked">
+										<li><a href="#" class="button primary">Default</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Table</h3>
+								</header>
+								<div class="content">
+									<h4>Default</h4>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+
+									<h4>Alternate</h4>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>Name</th>
+													<th>Description</th>
+													<th>Price</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>Item One</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Two</td>
+													<td>Vis ac commodo adipiscing arcu aliquet.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Three</td>
+													<td> Morbi faucibus arcu accumsan lorem.</td>
+													<td>29.99</td>
+												</tr>
+												<tr>
+													<td>Item Four</td>
+													<td>Vitae integer tempus condimentum.</td>
+													<td>19.99</td>
+												</tr>
+												<tr>
+													<td>Item Five</td>
+													<td>Ante turpis integer aliquet porttitor.</td>
+													<td>29.99</td>
+												</tr>
+											</tbody>
+											<tfoot>
+												<tr>
+													<td colspan="2"></td>
+													<td>100.00</td>
+												</tr>
+											</tfoot>
+										</table>
+									</div>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Buttons</h3>
+								</header>
+								<div class="content">
+									<ul class="actions">
+										<li><a href="#" class="button primary">Primary</a></li>
+										<li><a href="#" class="button">Default</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button large">Large</a></li>
+										<li><a href="#" class="button">Default</a></li>
+										<li><a href="#" class="button small">Small</a></li>
+									</ul>
+									<ul class="actions">
+										<li><a href="#" class="button primary icon solid fa-download">Icon</a></li>
+										<li><a href="#" class="button icon solid fa-download">Icon</a></li>
+									</ul>
+									<ul class="actions">
+										<li><span class="button primary disabled">Disabled</span></li>
+										<li><span class="button disabled">Disabled</span></li>
+									</ul>
+								</div>
+							</section>
+
+							<section>
+								<header>
+									<h3>Form</h3>
+								</header>
+								<div class="content">
+									<form method="post" action="#">
+										<div class="fields">
+											<div class="field half">
+												<label for="demo-name">Name</label>
+												<input type="text" name="demo-name" id="demo-name" value="" placeholder="Jane Doe" />
+											</div>
+											<div class="field half">
+												<label for="demo-email">Email</label>
+												<input type="email" name="demo-email" id="demo-email" value="" placeholder="jane@untitled.tld" />
+											</div>
+											<div class="field">
+												<label for="demo-category">Category</label>
+												<select name="demo-category" id="demo-category">
+													<option value="">-</option>
+													<option value="1">Manufacturing</option>
+													<option value="1">Shipping</option>
+													<option value="1">Administration</option>
+													<option value="1">Human Resources</option>
+												</select>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-low" name="demo-priority" checked>
+												<label for="demo-priority-low">Low</label>
+											</div>
+											<div class="field half">
+												<input type="radio" id="demo-priority-high" name="demo-priority">
+												<label for="demo-priority-high">High</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-copy" name="demo-copy">
+												<label for="demo-copy">Email me a copy</label>
+											</div>
+											<div class="field half">
+												<input type="checkbox" id="demo-human" name="demo-human" checked>
+												<label for="demo-human">Not a robot</label>
+											</div>
+											<div class="field">
+												<label for="demo-message">Message</label>
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+										</div>
+										<ul class="actions">
+											<li><input type="submit" value="Send Message" class="primary" /></li>
+											<li><input type="reset" value="Reset" /></li>
+										</ul>
+									</form>
+								</div>
+							</section>
+
+						</div>
+					</section>
+				-->
+
+				<!-- Section -->
+					
+				<!-- Copyright -->
+					
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
