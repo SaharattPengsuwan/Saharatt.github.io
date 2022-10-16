@@ -1,5 +1,5 @@
 
-
+'''
 from re import A
 
 
@@ -22,12 +22,6 @@ print('\ta\na\ta\ta\n\ta')
 # a      a       a
 #        a
 
-print('''\ta
-a\ta\ta
-\ta''')
-#        a
-# a      a       a
-#        a
 
 
 print('100.00')
@@ -79,17 +73,46 @@ print(0,1,2,3,4,5,6,7,8,9,)
 print('%d %d %d %d %d %d %d %d %d %d' %(0,1,2,3,4,5,6,7,8,9))
 # 0 1 2 3 4 5 6 7 8 9
 
+print('Display the numbers 1 through 5.')
+for num in [1,2,3,4,5]:
+    print(num)
 
 
 
 
+print('CALCULATING RUNNING TOTAL')
+sum = 0 
+for num in [1,2,3,4,5]:
+    sum += num
+    print(sum)
 
+  OUTPUT
+CALCULATING RUNNING TOTAL
+1 = 0 + 1
+3 = 1 + 2
+6 = 3 + 3
+10 = 6 + 4
+15 = 10 + 5
+'''
 
+def main():
+    for letter in 'Saharatt Pengsuwan':
+        if letter == 'a' or letter == 'n':
+            continue
+        print('Curent Letter :',letter)
 
+def main1():
 
+    for letter in 'Saharatt Pengsuwan':
+        if letter == 'a' or letter == 'n':
+            break
+        print('Curent Letter :',letter)
 
+def main2():
 
+    for letter in 'Saharatt Pengsuwan':
+        if letter == 'a' or letter == 'n':
+            pass
+        print('Curent Letter :',letter)
 
-
-
-
+main2()
