@@ -93,7 +93,7 @@ CALCULATING RUNNING TOTAL
 6 = 3 + 3
 10 = 6 + 4
 15 = 10 + 5
-'''
+
 
 def main():
     for letter in 'Saharatt Pengsuwan':
@@ -116,3 +116,33 @@ def main2():
         print('Curent Letter :',letter)
 
 main2()
+'''
+
+'''
+โปรแกรมนี้คือโปรแกรม...
+1.
+2.
+'''
+num_1 = int(input('Enter number_1 : ')) #number_1
+num_2 = int(input('Enter number_2 : ')) #number_2
+
+total = num_1 + num_2
+
+print(total)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
