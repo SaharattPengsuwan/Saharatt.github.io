@@ -123,14 +123,29 @@ main2()
 1.
 2.
 '''
-num_1 = int(input('Enter number_1 : ')) #number_1
-num_2 = int(input('Enter number_2 : ')) #number_2
 
-total = num_1 + num_2
+def main3():
 
-print(total)
+    score = int(input('Enter score : '))
+
+    while score < 0 or score > 100 : 
+        print('ERROR : The score cannot be negative')
+        print('or greater than 100.')
+        score = int(input('Enter the correct score : '))
 
 
+
+
+def main4():
+
+    keep_going = 'y'
+
+    while keep_going == 'y' :
+        name = input('Enter name : ')
+        print(name)
+        keep_going = input('Enter (y or n) :')
+
+main4()
 
 
 
