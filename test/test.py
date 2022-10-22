@@ -145,7 +145,9 @@ def main4():
         print(name)
         keep_going = input('Enter (y or n) :')
 
-main4()
+print(' {0:8}  |    {1:>8} '.format('Fruit','Quantity'))
+print(' {0:8}  |    {1:>8.2f} '.format('Apple',3.111))
+print(' {0:8}  |    {1:>8.2f} '.format('Orange',10.68))
 
 
 
